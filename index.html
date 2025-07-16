@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>3D Horror Game</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- Three.js CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/three@0.152.2/build/three.min.js"></script>
+  <!-- PointerLockControls -->
+  <script src="https://cdn.jsdelivr.net/npm/three@0.152.2/examples/js/controls/PointerLockControls.js"></script>
+  <!-- GLTFLoader -->
+  <script src="https://cdn.jsdelivr.net/npm/three@0.152.2/examples/js/loaders/GLTFLoader.js"></script>
+</head>
+<body>
+  <div id="overlay">
+    <button id="startButton">Click to Play</button>
+    <div id="storyText" class="hidden"></div>
+  </div>
+  <audio id="screamSound" src="assets/sounds/scream_placeholder.mp3" preload="auto"></audio>
+  <audio id="heartbeatSound" src="assets/sounds/heartbeat_placeholder.mp3" preload="auto" loop></audio>
+  <audio id="ambientMusic" src="assets/sounds/ambient_placeholder.mp3" preload="auto" loop></audio>
+  <audio id="footstepSound" src="assets/sounds/footstep_placeholder.mp3" preload="auto"></audio>
+  <script src="main.js"></script>
+</body>
+</html>
